@@ -1,0 +1,235 @@
+/* Importa a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+
+/* ---------- Página de Login ---------- */
+.login-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0072C6, #005A9E); /* Gradiente inspirado no Recuperatax */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  color: #003366;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #003366;
+  display: block;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+  border-color: #005A9E;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #005A9E, #003366);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background: linear-gradient(135deg, #003366, #005A9E);
+}
+
+.forgot-btn {
+  background: none;
+  border: none;
+  color: #005A9E;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Toggle Switch (Lembrar de mim) */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+  background-color: #005A9E;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* ---------- Página Home ---------- */
+.home-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #003366;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.sidebar ul li:hover {
+  background-color: #005A9E;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+/* ---------- Cadastro de Empresa ---------- */
+.company-registration {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.company-registration h2 {
+  color: #003366;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.company-registration .form-group {
+  margin-bottom: 1.25rem;
+}
+
+.company-registration label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #003366;
+  font-weight: 500;
+}
+
+.company-registration input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.company-registration input[type="text"]:focus {
+  border-color: #005A9E;
+}
+
+.company-registration button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #005A9E, #003366);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.company-registration button:hover {
+  background: linear-gradient(135deg, #003366, #005A9E);
+}
+
+.message {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: #d32f2f; /* Cor para mensagens de erro */
+}
