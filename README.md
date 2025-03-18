@@ -7,8 +7,8 @@ Este projeto é um sistema de login e cadastro de empresas desenvolvido com Reac
 1.  Clonar o repositório
 
     ```bash
-    git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
-    cd nome-do-repositorio
+    git clone [https://github.com/Lawrence858599/projeto-save.git](https://github.com/Lawrence858599/projeto-save.git)
+    cd projeto-save
     ```
 
 2.  Instalar as dependências
