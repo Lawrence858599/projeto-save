@@ -5,16 +5,13 @@ function CompanyRegistration() {
   const [cnpj, setCnpj] = useState('');
   const [message, setMessage] = useState('');
 
-  // Função para validar CNPJ
   const validateCNPJ = (cnpj) => {
     cnpj = cnpj.replace(/[^\d]+/g, '');
     if (cnpj === '') return false;
     if (cnpj.length !== 14) return false;
 
-    // Elimina CNPJs inválidos conhecidos
     if (/^(\d)\1+$/.test(cnpj)) return false;
 
-    // Validação do primeiro dígito verificador
     let tamanho = cnpj.length - 2;
     let numeros = cnpj.substring(0, tamanho);
     let digitos = cnpj.substring(tamanho);
@@ -53,7 +50,6 @@ function CompanyRegistration() {
       return;
     }
     setMessage('Empresa cadastrada com sucesso!');
-    // Aqui você pode adicionar a lógica para persistir os dados
   };
 
   return (

@@ -1,16 +1,35 @@
-# Projeto Save
+# Meu Projeto React: Sistema de Login e Cadastro de Empresas
 
-Esta é uma aplicação em React que inclui:
+Este projeto é um sistema de login e cadastro de empresas desenvolvido com React.js.
 
-- **Página de Login:**  
-  - Campos “Usuário” e “Senha” com tema verde/azul.  
-  - Toggle para “Lembrar de mim”.  
-  - Botão “Esqueci minha senha” (inativo).  
-  - Botão “Login” para validar as credenciais (use: _usuario_ e _senha_).
+## Como iniciar o projeto
 
-- **Home:**  
-  - Fundo branco com uma barra lateral em azul marinho.  
-  - A barra lateral possui a aba “Cadastrar Empresa” que exibe um formulário funcional com validação de CNPJ.
+1.  Clonar o repositório
 
-## Estrutura do Projeto
+    ```bash
+    git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
+    cd nome-do-repositorio
+    ```
 
+2.  Instalar as dependências
+
+    ```bash
+    npm install
+    ```
+
+3.  Rodar o projeto
+
+    ```bash
+    npm start
+    ```
+
+    O projeto será iniciado em http://localhost:3000/.
+
+## Funcionalidades
+
+* Login de usuário com campos "Usuário" e "Senha".
+* Opção "Lembrar de mim" com um toggle switch (não funciona, mas é bonito).
+* Botão "Esqueci minha senha" (não funciona, mas é bonito).
+* Cadastro de empresas funcional com validação de CNPJ.
+* Empresas não são totalmente cadastradas.
+* Página Home com sidebar azul-marinho contendo a opção de cadastrar empresa.
